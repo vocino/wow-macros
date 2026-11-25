@@ -16,6 +16,16 @@
 - "Commit" means local commits only. Push (either repo) only when explicitly asked.
 - Never commit wiki content into core or vice versa.
 
+## Pages site (main repo)
+
+- Static GitHub Pages site at the repo root: `index.html` (class grid),
+  `classes/<class>.html` (one page per Forever class, 9 total),
+  `assets/style.css` (only stylesheet). No JavaScript, no build step.
+- Class pages group future macros under Leveling / Dungeons & raids / PvP.
+  New macros must come from the wiki and obey the macro-writer rules.
+- `.nojekyll` present; Pages deploys from branch `main`, root.
+- Preview by opening `index.html` in a browser.
+
 ## Gates
 - None yet: no code, no tests, no lint. If macro files or checks are added later, document the gate here.
 
